@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-OrdersApplication<quiz>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.akatsukilab.orders.OrdersApplication",
+            "projectName": "quiz",
+            "args": ""
+        }
+    ]
+}

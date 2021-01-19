@@ -18,6 +18,7 @@ public class User implements Serializable {
      *
      */
     private static final long serialVersionUID = 1L;
+    private String id;
     private String name;
     private String lastName;
     private String email;
@@ -25,7 +26,8 @@ public class User implements Serializable {
     private String type;
 
 
-    public User(String name, String lastName, String email, String orderID, String type) {
+    public User(String id,String name, String lastName, String email, String orderID, String type) {
+        this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.email = email;

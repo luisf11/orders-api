@@ -1,0 +1,13 @@
+
+server:
+    port: 8085
+    servlet:
+      context-path: /orders-generator
+    error:
+        include-stacktrace: on-trace-param
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: user_db
