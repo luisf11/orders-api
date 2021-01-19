@@ -8,7 +8,8 @@ import com.akatsukilab.orders.models.Product;
 import com.akatsukilab.orders.repository.ProductRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
+@Service
 public class ProductServiceImpl implements ProductService {
 
     @Autowired
