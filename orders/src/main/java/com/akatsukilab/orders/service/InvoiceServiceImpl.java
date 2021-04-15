@@ -1,5 +1,6 @@
 package com.akatsukilab.orders.service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,6 +17,16 @@ public class InvoiceServiceImpl implements InvoiceService {
     InvoiceRepository invoiceRepository;
     @Override
     public List<Invoice> getInvoices() {
+
+        Invoice invoice = new Invoice();
+
+        invoice.setDate(new Date());
+        invoice.setInvoiceId("1");
+        invoice.setOrderId("1");
+        invoice.setStatus("open");
+        invoice.setTotalAmmount("100.00");
+        invoice.setUserName("luis");
+        invoiceRepository.save(invoice);
         return invoiceRepository.findAll();
     }
 
@@ -44,8 +55,10 @@ public class InvoiceServiceImpl implements InvoiceService {
         invoiceToEdit.setTotalAmmount(invoice.getTotalAmmount());
         invoiceToEdit.setUserName(invoice.getUserName());
         invoiceToEdit.setOrderId(invoice.getOrderId());
+        
 //add logic to edit order here
         return invoiceRepository.save(invoiceToEdit);
     }
     
 }
+

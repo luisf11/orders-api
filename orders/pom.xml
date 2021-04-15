@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.akatsukilab.orders</groupId>
 	<artifactId>orders</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>orders</name>
 	<description>orders api </description>
 
@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>de.flapdoodle.embed</groupId>
 			<artifactId>de.flapdoodle.embed.mongo</artifactId>
-			<scope>test</scope>
+			<!-- <scope>test</scope> -->
 		</dependency>
 	</dependencies>
 
